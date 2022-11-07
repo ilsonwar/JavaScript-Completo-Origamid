@@ -15,3 +15,21 @@ console.log(linkInterno.href);
 
 const animaisImg = document.querySelectorAll('.animais img');
 console.log(animaisImg);
+
+const gridSectionHTML = document.getElementsByClassName('grid-section');
+const gridSectionNode = document.querySelectorAll('.grid-section');
+
+primeiraUl.classList.add('grid-section');
+
+console.log(gridSectionHTML);
+console.log(gridSectionNode);
+
+gridSectionNode.forEach(function(item, index) {
+  console.log(item);
+});
+
+const arrayGrid = Array.from(gridSectionHTML);
+
+arrayGrid.forEach(function(item) {
+  console.log(item);
+});
